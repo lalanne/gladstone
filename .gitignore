@@ -1,0 +1,17 @@
+*.lo
+*.la
+config*
+.vscode
+refcode
+m4
+Makefile*
+aclocal.m4
+autom4te.cache/
+compile
+depcomp
+install-sh
+libtool
+ltmain.sh
+missing
+stamp-h1
+

@@ -220,7 +220,7 @@ gst_g729_enc_handle_frame (GstAudioEncoder * aenc, GstBuffer * buf)
 
   outbuf = gst_audio_encoder_allocate_output_buffer (GST_AUDIO_ENCODER (enc), G729_FRAME_BYTES);
 
-  if (!outbuf)
+  if (!outbuf || !buf)
     goto done;
 
   if (enc->frameno == 32767){
